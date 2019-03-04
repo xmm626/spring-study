@@ -13,4 +13,138 @@ http://www.springframework.org/schema/beans/spring-context.xsd">
     <bean id="messagePrinter" class="com.spring.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
+   <!--<bean id="car1" class="com.spring.Car">
+        <property name="brand" value="宝马"/>
+        <property name="color" value="金色"/>
+        <property name="parameter" value="3"/>
+    </bean>
+    <bean id="car2" class="com.spring.Car">
+        <property name="brand" value="法拉利"/>
+        <property name="color" value="白色"/>
+        <property name="parameter" value="3"/>
+    </bean>
+    <bean id="car3" class="com.spring.Car">
+        <property name="brand" value="布加迪"/>
+        <property name="color" value="青蓝色"/>
+        <property name="parameter" value="3"/>
+    </bean>
+    <bean id="boss1" class="com.spring.Boss">
+        <property name="name" value="麻花藤"/>
+        <property name="company" value="腾讯"/>
+        <property name="car" value="car1"/>
+        <property name="hobby" >
+            <list>
+                <value>演讲</value>
+                <value>copy</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="boss2" class="com.spring.Boss">
+        <property name="name" value="马云"/>
+        <property name="company" value="阿里巴巴"/>
+        <property name="car" value="car2"/>
+        <property name="hobby" >
+            <list>
+                <value>演讲</value>
+                <value>准备演讲</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="boss3" class="com.spring.Boss">
+        <property name="name" value="刘强东"/>
+        <property name="company" value="京东"/>
+        <property name="car" value="car3"/>
+        <property name="hobby" >
+            <list>
+                <value>演讲</value>
+                <value>不知**</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="Meeting" class="com.spring.Meeting">
+        <property name="theme" value="开会"/>
+        <property name="bosses">
+            <list>
+
+                <ref bean="boss1"/>
+
+                <ref bean="boss2"/>
+
+                <ref bean="boss3"/>
+            </list>
+        </property>
+    </bean>
+-->
+    <bean id="car1" class="com.spring.Car">
+        <property name="brand" value="奔驰"/>
+        <property name="color" value="黑色"/>
+        <property name="parameter" value="3"/>
+    </bean>
+    <bean id="car2" class="com.spring.Car">
+        <property name="brand" value="劳斯莱斯"/>
+        <property name="color" value="白色"/>
+        <property name="parameter" value="4"/>
+    </bean>
+    <bean id="car3" class="com.spring.Car">
+        <property name="brand" value="宝马"/>
+        <property name="color" value="黑色"/>
+        <property name="parameter" value="4"/>
+    </bean>
+
+    <bean id="boss1" class="com.spring.Boss">
+        <property name="name" value="马云"/>
+        <property name="company" value="阿里巴巴"/>
+        <property name="car" ref="car1"/>
+        <property name="hobby">
+            <list>
+            <value>阅读</value>
+            <value>散步</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="boss2" class="com.spring.Boss">
+        <property name="name" value="马化腾"/>
+        <property name="company" value="腾讯"/>
+        <property name="car" ref="car2"/>
+        <property name="hobby">
+            <list>
+            <value>美食</value>
+            <value>读书</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="boss3" class="com.spring.Boss">
+        <property name="name" value="乔布斯"/>
+        <property name="company" value="苹果"/>
+        <property name="car" ref="car3"/>
+        <property name="hobby">
+            <list>
+            <value>tingge</value>
+            <value>跑步</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="meeting" class="com.spring.Meeting">
+        <property name="theme" value="会议"/>
+        <property name="bosses">
+            <list>
+            <ref bean="boss1"/>
+            <ref bean="boss2"/>
+            <ref bean="boss3"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="max" class="com.spring.Max">
+        <constructor-arg name="a" value="5"/>
+        <constructor-arg name="b" value="3"/>
+    </bean>
+
+    <bean id="user" class="com.spring.User">
+        <constructor-arg name="account" value="admin"/>
+        <constructor-arg name="password" value="111"/>
+    </bean>
+    <bean id="userLogin" class="com.spring.UserLogin">
+        <constructor-arg name="user" ref="user"/>
+    </bean>
 </beans>
