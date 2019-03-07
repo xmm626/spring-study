@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
-http://www.springframework.org/schema/beans/spring-context.xsd">
+http://www.springframework.org/schema/beans/spring-context.xsd
+http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <bean id="messageServiceImpl" class="com.spring.MessageServiceImpl">
         <constructor-arg name="username" value="lili"/>
@@ -13,6 +15,16 @@ http://www.springframework.org/schema/beans/spring-context.xsd">
     <bean id="messagePrinter" class="com.spring.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
+
+    <bean id="userDAO" class="com.spring.UserDAOImpl"/>
+    <bean id="bf" class="com.spring.BeforeAdvice"/>
+    <aop:config>
+        <aop:aspect id="before" ref="bf">
+            <aop:pointcut id="myPointCut" expression="execution(* com.spring.*.*(..))"/>
+            <aop:before method="userMethod" pointcut-ref="myPointCut"/>
+        </aop:aspect>
+    </aop:config>
+
    <!--<bean id="car1" class="com.spring.Car">
         <property name="brand" value="宝马"/>
         <property name="color" value="金色"/>

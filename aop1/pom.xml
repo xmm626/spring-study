@@ -5,26 +5,22 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.spring</groupId>
-  <artifactId>AOP</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>aop</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>../jianshu</module>
-  </modules>
 
-  <name>AOP</name>
+  <name>aop</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-      <spring.version>5.1.5.RELEASE</spring.version>
-      <aspectj.version>1.9.2</aspectj.version>
-      <junit.version>4.12</junit.version>
-      <log4j.version>1.2.17</log4j.version>
-      <slf4j.version>1.7.12</slf4j.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <spring.version>5.1.5.RELEASE</spring.version>
+    <aspectj.version>1.9.2</aspectj.version>
+    <junit.version>4.12</junit.version>
+    <log4j.version>1.2.17</log4j.version>
+    <slf4j.version>1.7.12</slf4j.version>
   </properties>
 
   <dependencies>
@@ -34,11 +30,11 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
-          <groupId>org.aspectj</groupId>
-          <artifactId>aspectjrt</artifactId>
-          <version>${aspectj.version}</version>
-      </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>${aspectj.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
