@@ -8,7 +8,7 @@
        ">
     <!--   -->
     <bean id="hello" class="com.spring.HelloImpl"/>
-   <!-- 配置一个MyBeforeAdvice前置增强的bean-->
+   <!-- 配置一个before前置增强的bean-->
     <bean id="before" class="com.spring.MyBeforeAdvice"/>
     <aop:config>
         <aop:aspect id="before" ref="before">

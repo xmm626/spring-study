@@ -8,7 +8,7 @@
        ">
 
     <bean id="userDAO" class="com.spring.UserDAOImpl"/>
-    <!-- 配置一个MyBeforeAdvice前置增强的bean-->
+    <!-- 配置一个before前置增强的bean-->
     <bean id="bf" class="com.spring.BeforeAdvice"/>
     <aop:config>
         <aop:aspect id="before" ref="bf">

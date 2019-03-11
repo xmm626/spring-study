@@ -5,16 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.spring</groupId>
-  <artifactId>aop</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>1AOP</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>../aop2</module>
-    <module>../aop3</module>
-    <module>../AOP</module>
-  </modules>
 
-  <name>aop</name>
+  <name>1AOP</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -27,9 +21,21 @@
     <junit.version>4.12</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <slf4j.version>1.7.12</slf4j.version>
+    <hutool.version>4.5.1</hutool.version>
+
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+      <version>3.3.3</version>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool.version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

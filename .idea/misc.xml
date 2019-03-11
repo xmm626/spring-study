@@ -7,11 +7,14 @@
         <option value="$PROJECT_DIR$/IoC/pom.xml" />
         <option value="$PROJECT_DIR$/AOP/pom.xml" />
         <option value="$PROJECT_DIR$/aop1/pom.xml" />
+        <option value="$PROJECT_DIR$/_1AOP/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/aop2/pom.xml" />
+        <option value="$PROJECT_DIR$/aop3/pom.xml" />
         <option value="$PROJECT_DIR$/jianshu/pom.xml" />
       </set>
     </option>

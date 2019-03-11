@@ -3,7 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AOP" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/IoC" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_1AOP" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aop1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aop2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aop3" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jianshu" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quickstart" charset="UTF-8" />
   </component>
