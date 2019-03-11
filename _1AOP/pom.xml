@@ -6,7 +6,11 @@
 
   <groupId>com.spring</groupId>
   <artifactId>1AOP</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>../orm</module>
+  </modules>
 
   <name>1AOP</name>
   <!-- FIXME change it to the project's website -->

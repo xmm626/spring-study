@@ -23,8 +23,8 @@ public class ImageHandler {
     @Before(value="handleImage()")
     public void pressTextOnImage() throws IOException {
         logger.info("开始给图片添加水印。。。");
-        File srcFile= new File("D:/bg.jpg");
-        File destFile=new File("D:/bg1.jpg");
+        File srcFile= new File("D:/p1.jpg");
+        File destFile=new File("D:/p2.jpg");
 
         InputStream input =new FileInputStream(srcFile);
 
@@ -42,8 +42,8 @@ public class ImageHandler {
     @AfterReturning("handleImage()")
     public void grayImage(){
         logger.info("开始将图片转成黑白。。。");
-        File srcFile =new File("E:/bg1.jpg");
-        File destFile=new File("E:/bg2.jpg");
+        File srcFile =new File("E:/p2.jpg");
+        File destFile=new File("E:/p3.jpg");
         ImageUtil.gray(srcFile,destFile);
     }
 

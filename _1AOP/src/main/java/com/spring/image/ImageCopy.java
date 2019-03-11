@@ -10,8 +10,8 @@ public class ImageCopy {
 
     public void copyImage() throws IOException{
         logger.info("图片从D盘复制到E盘...");
-        File srcFile =new File("D:/bg1.jpg");
-        File destFile =new File("E:/bg1.jpg");
+        File srcFile =new File("D:/p2.jpg");
+        File destFile =new File("E:/p2.jpg");
         InputStream in = new FileInputStream(srcFile);
         OutputStream out = new FileOutputStream(destFile);
         byte[] bytes = new byte[(int) srcFile.length()];

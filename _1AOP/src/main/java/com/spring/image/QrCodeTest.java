@@ -19,10 +19,11 @@ public class QrCodeTest {
         config.setForeColor(foreColorRGB);
 // 设置背景色
         config.setBackColor(bgColorRGB);
+        config.setImg("d:/1.jpg");
 
 // 生成二维码到文件，也可以到流
        // QrCodeUtil.generate("https://www.jianshu.com/u/522401c76977", config, FileUtil.file("d:/二维码/1.jpg"));
-        QrCodeUtil.generate("https://www.jianshu.com/u/522401c76977", QrConfig.create().setImg("d:/1.jpg"),FileUtil.file("d:/二维码/1.jpg")//写出到的文件
+        QrCodeUtil.generate("https://www.jianshu.com/u/522401c76977",config,FileUtil.file("d:/二维码/1.jpg")//写出到的文件
         );
     }
 }
